@@ -17,7 +17,13 @@
         	<a href="introduccio.html">Introducción</a>
         	<a href="descripcio.html">Descripción</a>
         	<a href="capitols.html">Capitulos</a>
-        	<a href="conclusions.html">Conclusiones</a>
+        	<a href="conclusions.html">Conclusiones
+            <div class="submenu">
+              <a href="glosario.html">Glosario</a>
+              <a href="bibliografia.html">Bibliografía</a>
+              <a href="anexos.html">Anexos</a>
+            </div>
+          </a>
         	<div class="animation start-home"></div>
         </nav>
       </nav>
@@ -43,7 +49,7 @@
             </figure>
             <h3>Curiosidad</h3>
             <p>Nuestro prototipo de jabón es como el que esta en la imagen pero para el codigo elegimos otro video y configuremos el codigo para que funcionase bien en nuestro jabón. </p>
- 
+
           </li>
 
         </ul>
@@ -67,7 +73,7 @@
 
           <h4>2.1.1 Requisitos funcionales</h4>
           <p>Código entendible, conexiones correctamente conectadas</p>
-          
+
           <h4>2.1.2 Requisitos no funcionales</h4>
           <p>Que sea fácil de utilizar
             Que la cuerda aguante con el servomotor
@@ -86,15 +92,15 @@
 
           <h3>2.3 Estructura del proyecto</h3>
           <img src="images/diagrama.png" width="500" height="500" />
-    
+
           <p>El sensor tiene diferentes conectores que hay que conectar a arduino para que funcione y se pueda modificar con el código.
             El primero conector que vemos más a la izquierda de color naranja se llama vcc que es el que recibe electricidad para que funcione el sensor. Este conector va conectado al de 5V de la placa para que le de energía.
             El conector trig de color rosa va conectado al pin donde enviara un pulso ultrasonico.
             El conector echo de color azul se encarga de recibir el pulsa ultrasonico que envia el trigger y va conectado al pin 8.
             Por último tenemos el conector GND de color turquesa es la toma de tierra. Es el pin que nos suministra la tensión para el rango máximo de los puertos analógicos, normalmente 5V y va conectado al conector GND de la placa.
             </p>
-            
-            
+
+
             <p>El servomotor es parecido al sensor tiene el mismo tipo de conectores.
             El primer conector del servomotor se llama señal y es la entrada, ya sea analógica o digital, que representa el comando de posición final para el eje va conectado al pin 7.
             El conector vcc del servomotor es igual que el del sensor es el conector de alimentación y va conectado a la protoboard junto con el sensor para que los dos reciban 5V y tengan suficiente energía para funcionar.
@@ -104,7 +110,7 @@
 
            <h3>2.4 Descripción de los componentes</h3>
            <img src="images/diagrama real.jpg" width="500" height="500" />
-           
+
            <h4>2.4.1 Componente 1</h4>
            <p>Sensor HC-SR04</p>
            <p>El sensor HC-SR04 es un sensor de distancia de bajo coste que utiliza ultrasonido para determinar la distancia de un objetivo en un rango de 2 a 450 cm. Destaca por su pequeño tamaño, bajo consumo energético, buena precisión y excelente precio. El sensor HC-SR04 es el más utilizado dentro de los sensores de tipo ultrasonidos, principalmente por la cantidad de información y proyectos disponibles en la web. Del mismo modo es el más empleado en proyectos de robótica como robots o como en nuestro caso un jabón automatizado.</p>
