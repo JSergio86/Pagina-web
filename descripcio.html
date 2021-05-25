@@ -39,20 +39,11 @@
 
           <li>
             <figure>
-              <img src="images/naranja.png" alt="orange">
+              <img src="images/prototipo.jpg" alt="orange">
             </figure>
-            <h3>lorem ipsum dolor</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <a class="wstone" href="http://online-go.com">go!</a>
-          </li>
-
-          <li>
-            <figure>
-              <img src="images/naranja.png" alt="oranje">
-            </figure>
-            <h3>lorem ipsum dolor</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <a href="http://online-go.com">go!</a>
+            <h3>Curiosidad</h3>
+            <p>Nuestro prototipo de jabón es como el que esta en la imagen pero para el codigo elegimos otro video y configuremos el codigo para que funcionase bien en nuestro jabón. </p>
+ 
           </li>
 
         </ul>
@@ -67,9 +58,83 @@
         </section>
 
         <section class="content">
-          <h1>Jabón automatizado</h1>
-<p>Nuestro proyecto consiste en hacer un jabón automatizado. El objetivo del proyecto es evitar el repetido contacto con el recipiente de jabón, poder aplicar el jabón satisfactoriamente, conseguir facilitar el ponerse jabón para no tener contacto con nadie y tener más seguridad, por ejemplo, los recipientes que ponen los comercios o centros comerciales, te dejan un recipiente de jabón, y te tienes que poner tú mismo, esto implica que muchas personas cogen el jabón o tienen contacto con él, pues queremos evitar esto sobre todo el contacto que es muy importante estos últimos meses.Este proyecto utiliza Arduino UNO, como principal objeto</p>
-        </section>
+          <h1>2 Descripción del proyecto</h1>
+          <h3>2.1 Análisis de requisitos</h3>
+          <p>Que funcione perfectamente
+            Que quede bien presentado
+            Que la página esté terminada
+            </p>
+
+          <h4>2.1.1 Requisitos funcionales</h4>
+          <p>Código entendible, conexiones correctamente conectadas</p>
+          
+          <h4>2.1.2 Requisitos no funcionales</h4>
+          <p>Que sea fácil de utilizar
+            Que la cuerda aguante con el servomotor
+            Que tenga buena durabilidad
+            </p>
+
+          <h4>2.1.3 Previsión de tareas de investigación</h4>
+          <p>- Comprender cómo funciona Arduino</p>
+          <p>- Comprender cómo funciona un servomotor</p>
+          <p>- Comprender cómo funciona el sensor</p>
+          <p>- Comprender el código de Arduino</p>
+
+          <h3>2.2 Tecnologías</h3>
+          <h4>2.2.1 Comparativa de las tecnologías valoradas</h4>
+          <h4>2.2.2 Tecnologías escogidas</h4>
+
+          <h3>2.3 Estructura del proyecto</h3>
+          <img src="images/diagrama.png" width="500" height="500" />
+    
+          <p>El sensor tiene diferentes conectores que hay que conectar a arduino para que funcione y se pueda modificar con el código.
+            El primero conector que vemos más a la izquierda de color naranja se llama vcc que es el que recibe electricidad para que funcione el sensor. Este conector va conectado al de 5V de la placa para que le de energía.
+            El conector trig de color rosa va conectado al pin donde enviara un pulso ultrasonico.
+            El conector echo de color azul se encarga de recibir el pulsa ultrasonico que envia el trigger y va conectado al pin 8.
+            Por último tenemos el conector GND de color turquesa es la toma de tierra. Es el pin que nos suministra la tensión para el rango máximo de los puertos analógicos, normalmente 5V y va conectado al conector GND de la placa.
+            </p>
+            
+            
+            <p>El servomotor es parecido al sensor tiene el mismo tipo de conectores.
+            El primer conector del servomotor se llama señal y es la entrada, ya sea analógica o digital, que representa el comando de posición final para el eje va conectado al pin 7.
+            El conector vcc del servomotor es igual que el del sensor es el conector de alimentación y va conectado a la protoboard junto con el sensor para que los dos reciban 5V y tengan suficiente energía para funcionar.
+            Y por último el conector GND igual que el sensor es para conexión a tierra y va conectado al otro GND de la placa.
+            Un conector de la placa que se llama 5V va conectado a la protoboard y el conector vcc del servomotor y sensor van conectados justo detrás del 5V para que los dos reciban energía y funcionen.
+           </p>
+
+           <h3>2.4 Descripción de los componentes</h3>
+           <img src="images/diagrama real.jpg" width="500" height="500" />
+           
+           <h4>2.4.1 Componente 1</h4>
+           <p>Sensor HC-SR04</p>
+           <p>El sensor HC-SR04 es un sensor de distancia de bajo coste que utiliza ultrasonido para determinar la distancia de un objetivo en un rango de 2 a 450 cm. Destaca por su pequeño tamaño, bajo consumo energético, buena precisión y excelente precio. El sensor HC-SR04 es el más utilizado dentro de los sensores de tipo ultrasonidos, principalmente por la cantidad de información y proyectos disponibles en la web. Del mismo modo es el más empleado en proyectos de robótica como robots o como en nuestro caso un jabón automatizado.</p>
+           <img src="images/sensor.png" width="200" height="200" />
+
+           <h4>2.4.2 Componente 2</h4>
+           <p>Servomotor DS04-NFC </p>
+           <p>Es un actuador rotativo o lineal capaz de controlar la posición, velocidad o aceleración del eje de forma precisa y con una elevada respuesta dinámica.
+            Este servomotor de rotación continua convierte a un Servo estándar RC de pulsos PWM en un Servo de velocidad de rotación continua (360 °), con un Torque de 5.5Kg / cm.</p>
+           <img src="images/servomotor.png" width="200" height="200" />
+
+           <h4>2.4.3 Componente 3</h4>
+           <p>Arduino UNO placa</p>
+           <p>Un Arduino es una placa que cuenta con todos los elementos necesarios para conectar periféricos a las entradas y salidas del microcontrolador. Se trata de una placa impresa con todos los componentes necesarios para el funcionamiento del micro y su comunicación con un ordenador a través de comunicación serial. Es una placa con código abierto creada por Arduino.</p>
+           <img src="images/arduino placa.png" width="200" height="200" />
+
+           <h4>2.4.4 Componente 4</h4>
+           <p>Protoboard</p>
+           <p>Es un tablero con orificios que se encuentran conectados eléctricamente entre sí de manera interna, habitualmente siguiendo patrones de líneas, en el cual se pueden insertar componentes electrónicos y cables para el armado y prototipado de circuitos electrónicos y sistemas similares y que hemos utilizado para conectar sensor y servomotor en este proyecto</p>
+           <img src="images/protoboard.png" width="200" height="200" />
+
+            <h3>2.5 Definición de las tareas</h3>
+            <h4>2.5.1 Prueba 1</h4>
+            <h4>2.5.2 Prueba 2</h4>
+
+            <h3>2.5 Definición de las funcionalidades</h3>
+            <h4>2.5.1 Funcionalidad 1</h4>
+            <h4>2.5.2 Funcionalidad 2</h4>
+
+          </section>
 
 
 
@@ -87,7 +152,7 @@
 
 </main>
 <footer>
-  <p>&copy; 2021. Made with Jordi y Sergio .</p>
+  <p>&copy; 2021. Made with Sergio .</p>
 </footer>
   </body>
   <script src="script.js"></script>

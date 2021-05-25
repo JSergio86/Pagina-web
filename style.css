@@ -58,13 +58,7 @@ a:hover {
   color:orange;
 }
 
-.sdb-right {
 
-}
-
-.sdb-left {
-
-}
 
 /* Banner Imagen */
 .banner {
@@ -370,7 +364,14 @@ nav .start-contact, a:nth-child(5):hover~.animation {
 
 .content > h3 {
     font-family: 'Arial';
-    color: black;
+    color: blue;
     font-size: 24px;
     font-weight: bold;
+}
+
+.content > h4 {
+  font-family: 'Arial';
+  color: blue;
+  font-size: 20px;
+  font-weight: bold;
 }
